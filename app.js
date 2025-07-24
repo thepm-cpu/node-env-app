@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 const ENV = process.env.APP_ENV || 'development';
 
 app.get('/', (req, res) => {
-  res.send(`🚀 Hello from the ${ENV} environment!`);
+  res.send(`This change is directly from my local machine to the ${ENV} environment!`);
 });
 
 app.get('/health', (req, res) => {
